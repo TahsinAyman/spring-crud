@@ -5,7 +5,7 @@
 spring:
   # profiles: dev
   datasource:
-    url: jdbc:mysql://localhost:3306/msrj
+    url: jdbc:mysql://192.168.0.140:3306/msrj
     username: root
     password: root
   jpa:
