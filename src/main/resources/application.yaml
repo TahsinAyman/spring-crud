@@ -1,0 +1,36 @@
+# spring:
+#   profiles:
+#     default: dev
+# ---
+spring:
+  # profiles: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/msrj
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+# ---
+# spring:
+#   profiles: prod
+#   datasource:
+#     url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB}
+#     username: ${DB_USER}
+#     password: ${DB_PASS}
+#   jpa:
+#     hibernate:
+#       ddl-auto: update
+#     show-sql: true
+# ---
+# spring:
+#   profiles: test
+#   datasource:
+#     url: jdbc:h2:mem:msrj
+#     username: sa
+#     password:
+#   jpa:
+#     hibernate:
+#       ddl-auto: update
+#     show-sql: true
